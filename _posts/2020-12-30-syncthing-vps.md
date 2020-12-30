@@ -276,4 +276,4 @@ Also thank you very much to the authors of the following articles. Please take a
 - V. Gite, [_Add / Create a Sudo User on CentOS Linux 8 sudoers_](https://www.cyberciti.biz/faq/add-create-a-sudo-user-on-centos-linux-8/)
 - Syncthing contributors, [_Syncthing's Docker README_](https://github.com/syncthing/syncthing/blob/main/README-Docker.md)
 
-Happy syncing! :)
+Happy syncing! :tada:
