@@ -1,6 +1,10 @@
-# This is a guide ...
+---
+layout: post
+title: Syncthing on your VPS
+categories: [syncthing, vps, vserver, docker, container, ssh, fail2ban]
+---
 
-... on how to set up a Linux virtual private server (VPS) for running a Syncthing node. After completing this guide, you will have a VPS serving as a Syncthing node in your Syncthing network, and which is hardened against attacks.
+This is a guide on how to set up a Linux virtual private server (VPS) for running a [Syncthing](https://syncthing.net/) node. After completing this guide, you will have a VPS serving as a Syncthing node in your Syncthing network, and which is hardened against attacks.
 
 We will discuss
 
@@ -272,4 +276,4 @@ Also thank you very much to the authors of the following articles. Please take a
 - V. Gite, [_Add / Create a Sudo User on CentOS Linux 8 sudoers_](https://www.cyberciti.biz/faq/add-create-a-sudo-user-on-centos-linux-8/)
 - Syncthing contributors, [_Syncthing's Docker README_](https://github.com/syncthing/syncthing/blob/main/README-Docker.md)
 
-Happy syncing! :tada:
+Happy syncing! :)
