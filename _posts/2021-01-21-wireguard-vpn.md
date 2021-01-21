@@ -4,22 +4,27 @@ title: Site-to-site, split-tunneling VPN with WireGuard
 categories: [wireguard, vpn, split, tunneling, site-to-site]
 ---
 
-This is a quick intro to setting up your first site-to-site virtual private network (VPN) with split-tunneling enabled. After completing this guide
-
-- your client and server will be on the same virtual private network `10.0.0.0/24`
-- your client will only send request with a target of that virtual network to your server (split tunneling)
+This is a quick intro to setting up your first site-to-site virtual private network (VPN) with split-tunneling enabled. After completing this guide, your client will request resources private to the VPN through WireGuard, and everything else from the internet as usual.
 
 # What is a site-to-site VPN?
 
-VPN is short for virtual private network. They emulate a private network over the internet. VPNs are popular for obfuscating client identities and origins (e.g. for circumventing geoblocking) or accessing internal networks remotely (e.g. when working from home). The latter are called site-to-site VPNs.
+VPN is short for virtual private network. A VPN emulates a private network over the internet.
 
-# Where do I get one?
+VPNs are popular for obfuscating client identities and origins (e.g. for circumventing geoblocking) or accessing internal networks remotely (e.g. when working from home). The latter are called site-to-site VPNs.
+
+# What is split-tunneling?
+
+Split-tunneling happens when you are connected to two or more networks, and send requests to either one of those depending on the requested resource.
+
+With VPNs, split-tunneling usually refers to only sending requests to your VPN when you want to access an internal resource of that VPN, and requesting everything else through your plain connection to the internet.
+
+# Where do I get a VPN?
 
 With [WireGuard](https://www.wireguard.com/), you can set up your VPN on your server directly. There is no need to purchase any other service.
 
-Note that for this guide we assume your server has a static IP.
+Note that for this guide your server needs to have a static IP.
 
-So let's get our hands dirty!
+So let's get our hands dirty! :wrench:
 
 # Setting up the server
 
