@@ -68,13 +68,13 @@ You can now open an SSH session from your local machine to your remote. Look up 
 [i@localhost ~]$ ssh root@<domain>
 ```
 
-You will be shown the ECDSA fingerprint of your remote. Make sure it is the same as when calculating it on your remote:
+You will be shown the ECDSA, RSA or ED25519 fingerprint `<fingerprint>` of your remote which should look like `SHA256:r4nd0Mch4Rac73r5`. Make sure it is the same as when calculating it on your remote:
 
 ```console
-[root@remote ~]$ ssh-keyscan -t ecdsa localhost | ssh-keygen -lf -
+[root@remote ~]$ ssh-keyscan localhost | ssh-keygen -lf - | grep <fingerprint>
 ```
 
-If it is not your, connection is compromised. Abort the connection!
+If you don't see `<fingerprint>` highlighted in above command's output, your connection is compromised. Abort the connection!
 
 If the fingerprint is correct, accept it. You will be prompted for `root`'s password. When successful, your shell will indicate that you are now logged in on your remote machine.
 
