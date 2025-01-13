@@ -31,7 +31,7 @@ Note that it might take a day or two for your provider to set up your VPS.
 
 # [i@localhost ~]$ and [root@remote ~]\#
 
-If you are new to Linux you might be wondering what these these things in front of the actual commands mean. They appear when your console prompts you for a command.
+If you are new to Linux you might be wondering what these things in front of the actual commands mean. They appear when your console prompts you for a command.
 
 `[i@localhost ~]$` indicates that the command will be executed by user `i`, on machine `localhost`, in the `~` directory and not as `root` (`$`).
 
