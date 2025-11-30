@@ -39,7 +39,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: -system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  color: $darkerGray;
+  color: white;
   font-weight: bold;
 
   line-height: 1.7;
@@ -54,12 +54,15 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 2rem;
-  margin-top: 4em;
   margin-bottom: 1.5em;
   
   a {
     color: inherit;
   }
+}
+
+.entry h1 {
+  margin-top: 4em;
 }
 
 h2 {
@@ -84,7 +87,6 @@ h3 {
 
 h4 {
   font-size: 18px;
-  color: #222;
 }
 
 p, div.highlight {
@@ -344,7 +346,7 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $darkGray;
+    color: #666;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
@@ -362,7 +364,6 @@ nav {
 
 .posts > .post {
   padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
 }
 
 .posts > .post:last-child {
