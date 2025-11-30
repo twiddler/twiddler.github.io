@@ -21,9 +21,9 @@ html {
 }
 
 body {
-  background: #fff;
+  background: #000;
   font-family: -system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  color: #404040;
+  color: #fff;
   line-height: 1.7;
   font-weight: 400;
   font-size: 18px;
@@ -32,7 +32,7 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
+  max-width: 34em;
   padding: 0 10px;
   width: 100%;
 }
@@ -53,7 +53,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 2rem;
+  margin-top: 4em;
+  margin-bottom: 1.5em;
+  
   a {
     color: inherit;
   }
@@ -85,7 +88,7 @@ h4 {
 }
 
 p, div.highlight {
-  margin: 15px 0;
+  margin: 1em 0;
 }
 
 table {
@@ -173,11 +176,13 @@ span[data-pullquote]:before {
 }
 
 a {
-  color: $blue;
+  color: #666;
   text-decoration: none;
 	cursor: pointer;
+
   &:hover, &:active {
-    color: $blue;
+    color: white;
+    text-decoration: white underline wavy;
   }
 }
 
@@ -266,7 +271,6 @@ p > img:not(.emoji) {
 
 .masthead {
   padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
 
   @include mobile {
     text-align: center;
@@ -302,7 +306,7 @@ p > img:not(.emoji) {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
+  color: white;
   cursor: pointer;
   font-family: $helveticaNeue;
   font-weight: 300;
@@ -368,13 +372,11 @@ nav {
 
 .post {
   blockquote {
-    margin: 1.8em .8em;
-    /*border-left: 2px solid $gray;*/
+    border-left: .2em solid rgba(255,255,255,.2);
     padding: 0.1em 1em;
-    color: $gray;
-    font-size: 22px;
+    color: white;
     font-style: italic;
-    background-color: #ede1ff;
+    background-color: rgba(255,255,255,.07);
   }
 
   .you-may-like{
@@ -402,16 +404,7 @@ nav {
   position: relative;
 }
 
-.wrapper-main {
-  padding-bottom: 134px;
-}
-
 .wrapper-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 89px;
-  background-color: $lightGray;
 }
 
 footer {
@@ -427,18 +420,6 @@ body:after {
     position: absolute;
     left: 0;
     content: '';
-}
-
-#bar {
-    background: #000;
-    height: 7px;
-    background-size: cover;
-    background-position: left 60%;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    overflow: hidden;
-    z-index: 1000;
 }
 
 .post h1{
@@ -693,10 +674,10 @@ Modules - reusable parts of our design
 }
 
 .post-tags a {
-  font-size: 14.5px;
-  padding: 2px 13px;
+  font-size: .6em;
+  padding: .3em .5em;
   border: none;
-  background-color: #4CAF50;
+  background-color: #212121;
   border-radius: 50px;
   color: #fff;
 }
