@@ -1,8 +1,12 @@
 .highlight {
-    background-color: #1e1c3f;
     padding: 7px 7px 7px 10px;
     overflow: auto;
     font-size: 95%;
+}
+
+div.highlight {
+    border: 1px solid rgba(255,255,255,.2);
+    border-radius: 5px;
 }
 
 code {
@@ -15,7 +19,7 @@ code {
 }
 
 .highlight .hll { background-color: #f1fa8c }
-.highlight  { background: #121212; color: #f8f8f2 }
+.highlight {}
 .highlight .c { color: #6272a4 } /* Comment */
 .highlight .err { color: #f8f8f2 } /* Error */
 .highlight .g { color: #f8f8f2 } /* Generic */
