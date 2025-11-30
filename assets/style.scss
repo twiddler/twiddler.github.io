@@ -179,12 +179,11 @@ span[data-pullquote]:before {
 
 a {
   color: #666;
-  text-decoration: none;
+  text-decoration: underline wavy;
 	cursor: pointer;
 
   &:hover, &:active {
     color: white;
-    text-decoration: white underline wavy;
   }
 }
 
@@ -675,12 +674,8 @@ Modules - reusable parts of our design
 }
 
 .post-tags a {
-  font-size: .6em;
+  font-size: .7em;
   padding: .3em .5em;
-  border: none;
-  background-color: #212121;
-  border-radius: 50px;
-  color: #fff;
 }
 
 .pagination a, .pagination span {
