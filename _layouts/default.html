@@ -53,8 +53,10 @@
             </div>
 
             <nav>
-              <a href="{{ site.baseurl }}/">Home</a>
-              <a href="{{ site.baseurl }}/search">Search</a>
+              <a href="{{ site.baseurl }}/">home</a>
+              <a href="{{ site.baseurl }}/search">search</a>
+              {% if site.footer-links.rss %}<a href="{{ site.baseurl }}/feed.xml">rss</a>{% endif %}
+              {% if site.footer-links.github %}<a href="https://github.com/{{ site.footer-links.github }}">github</a>{% endif %}
             </nav>
           </header>
         </div>
@@ -62,12 +64,6 @@
 
       <div class="wrapper-main">
         <div id="main" role="main" class="container">{{ content }}</div>
-      </div>
-
-      <div class="wrapper-footer">
-        <div class="container">
-          <footer class="footer">{% include svg-icons.html %}</footer>
-        </div>
       </div>
     </div>
 
