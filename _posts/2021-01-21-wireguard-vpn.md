@@ -139,6 +139,6 @@ Thank you very much to everyone who contributed to the man pages and online docu
 Also, thank you very much to the authors of the following articles! Take a look at those if you found some of my instructions incomplete or hard to follow, maybe they fit your way of learning things more.
 
 - M. Mota, [_Getting Started with WireGuard_](https://dev.to/miguelmota/getting-started-with-wireguard-n9e#installing-wireguard-on-client)
-- A. Kuusela, [_How to get started withWireGuardVPN_](https://upcloud.com/community/tutorials/get-started-wireguard-vpn/)
+- A. Kuusela, [_How to get started with WireGuard VPN_](https://upcloud.com/community/tutorials/get-started-wireguard-vpn/)
 
 Have fun! :tada:
