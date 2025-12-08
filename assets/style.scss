@@ -151,12 +151,11 @@ span[data-pullquote]:before {
 }
 
 a {
-  color: #fff0b3;
-  text-decoration: underline wavy;
-	cursor: pointer;
+  text-decoration: underline .08em wavy #ebce01;
+  text-underline-position: under;
 
   &:hover, &:active {
-    color: white;
+    text-decoration-color: #6bb6dc;
   }
 }
 
