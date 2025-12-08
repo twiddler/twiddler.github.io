@@ -256,15 +256,12 @@ p > img:not(.emoji) {
   width: 70px;
   height: 70px;
   margin-right: 15px;
+  border-radius: 5px;
 
   @include mobile {
     float: none;
     display: block;
     margin: 0 auto;
-  }
-
-  img {
-    border-radius: 5px;
   }
 }
 
